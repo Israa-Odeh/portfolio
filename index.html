@@ -9,18 +9,60 @@
         content="Welcome to my personal portfolio website! Here, you'll find a comprehensive overview of my education, skills, and professional experience. Explore the various sections to learn more about my background and get in touch.">
     <title>Israa Odeh | Frontend Developer</title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon">
+
+    <!--Google Fonts-->
+    <!--Copse Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+
+    <!--Delius Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Copse&family=Delius&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav class="top-nav"
+            aria-label="The main navigation menu of the portfolio which includes links to the About Me, Skills, Education, Projects, and Contact sections, as well as the logo.">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png"
+                        alt="A portfolio logo with an opening bracket '&lt;', a nature-inspired element inside, and a closing bracket '&gt;', symbolizing its frontend development association."
+                        width="115" height="80"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <section class="home-page"></section>
-        <section class="about-me-page"></section>
-        <section class="skills-page"></section>
-        <section class="educational-background-page"></section>
-        <section class="experience-page"></section>
+        <section id="home" class="home-page">
+            <h1>Hi, I'm Israa Odeh</h1>
+            <p>Front-end Developer</p>
+            <div class="contact-icons-container">
+                <a href="mailto:israa.k.odeh@gmail.com" target="_blank"><img src="images/email-icon-5F8FA7.png"
+                        alt="Email icon symbol (@)" width="40" height="40"></a>
+
+                <a href="https://www.linkedin.com/in/israa-odeh/" target="_blank"><img
+                        src="images/linkedin-icon-5F8FA7.png" alt="Linkedin icon" width="40" height="40"></a>
+
+                <a href="https://github.com/Israa-Odeh" target="_blank"><img src="images/github-icon-5F8FA7.png"
+                        alt="GitHub icon" width="40" height="40"></a>
+            </div>
+        </section>
+
+        <section id="about" class="about-me-page"></section>
+        <section id="skills" class="skills-page"></section>
+        <section id="education" class="educational-background-page"></section>
+        <section id="projects" class="projects-page"></section>
     </main>
 
     <footer>
