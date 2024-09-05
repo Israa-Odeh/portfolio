@@ -22,6 +22,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Copse&family=Delius&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Waits until the entire HTML document is loaded and ready
+        document.addEventListener('DOMContentLoaded', () => {
+            // Selects the button with the class 'menu-toggle'
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            // Selects the dropdown menu with the class 'nav-dropdown'
+            const navDropdown = document.querySelector('.nav-dropdown');
+
+            // Adds a click event listener to the menu button
+            menuToggle.addEventListener('click', () => {
+                // Toggles the 'show' class on the dropdown menu
+                navDropdown.classList.toggle('show');
+
+                // Checks if the 'aria-hidden' attribute is set to 'true'
+                const isHidden = navDropdown.getAttribute('aria-hidden') === 'true';
+
+                // Updates the 'aria-hidden' attribute to the opposite value
+                navDropdown.setAttribute('aria-hidden', !isHidden);
+            });
+        });
+    </script>
+
+
+
 </head>
 
 <body>
@@ -29,10 +54,11 @@
         <nav class="top-nav"
             aria-label="The main navigation menu of the portfolio which includes links to the About Me, Skills, Education, Projects, and Contact sections, as well as the logo.">
             <div class="logo">
-                <a href="#"><img src="images/logo.png"
+                <a href="#"><img src="images/home-page/logo.png"
                         alt="A portfolio logo with an opening bracket '&lt;', a nature-inspired element inside, and a closing bracket '&gt;', symbolizing its frontend development association."
                         width="115" height="80"></a>
             </div>
+
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -40,21 +66,38 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <img src="images/home-page/menu.png"
+                    alt="A menu icon to open a dropdown menu for navigating different sections of the page" width="30"
+                    height="30">
+            </button>
+
+            <div class="nav-dropdown" aria-hidden="true">
+                <ul class="nav-dropdown-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
+
     <main>
-        <section id="home" class="home-page">
+        <section id="home-page" class="home-page">
             <h1>Hi, I'm Israa Odeh</h1>
             <p>Front-end Developer</p>
             <div class="contact-icons-container">
-                <a href="mailto:israa.k.odeh@gmail.com" target="_blank"><img src="images/email-icon-5F8FA7.png"
+                <a href="mailto:israa.k.odeh@gmail.com" target="_blank"><img src="images/home-page/email-icon.png"
                         alt="Email icon symbol (@)" width="40" height="40"></a>
 
                 <a href="https://www.linkedin.com/in/israa-odeh/" target="_blank"><img
-                        src="images/linkedin-icon-5F8FA7.png" alt="Linkedin icon" width="40" height="40"></a>
+                        src="images/home-page/linkedin-icon.png" alt="Linkedin icon" width="40" height="40"></a>
 
-                <a href="https://github.com/Israa-Odeh" target="_blank"><img src="images/github-icon-5F8FA7.png"
+                <a href="https://github.com/Israa-Odeh" target="_blank"><img src="images/home-page/github-icon.png"
                         alt="GitHub icon" width="40" height="40"></a>
             </div>
         </section>

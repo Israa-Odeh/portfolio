@@ -8,6 +8,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    min-width: 320px;
+}
+
 .top-nav {
     width: 100%;
     position: fixed;
@@ -36,14 +40,55 @@ html, body {
     color: #DAE3E1;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-dropdown {
+    display: none;
+    position: absolute;
+    top: 84px;
+    right: 0;
+    background-color: #DAE3E1;
+    width: 130px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /*********************************************Try here************************************************/
+}
+
+.nav-dropdown-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-dropdown-links li:not(:first-child):not(:last-child) {
+    margin: 20px 0;
+}
+
+.nav-dropdown-links a {
+    color: #588CA4;
+    text-decoration: none;
+    font-family: "Copse", serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
 main {
     margin-top: 80px;
 }
 
 .home-page {
     width: 100%;
-    height: 100vh;
-    background-image: url("../images/home-background.jpg");
+    min-height: 600px; /* Minimum height to ensure content isn't too small */
+    height: auto; /* Allows the element to grow based on content */
+    max-height: 100vh; /* Maximum height relative to viewport height */
+    overflow-y: auto;
+    background-image: url("../images/home-page/home-background.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -57,8 +102,8 @@ main {
 .contact-icons-container {
     display: flex;
     justify-content: center;
-    padding-top: 80px;
-    gap: 44px;
+    padding: 60px 0;
+    gap: 40px;
 }
 
 .home-page h1 {
@@ -76,6 +121,7 @@ main {
     font-size: 25px;
     color: #588CA4;
 }
+
 
 .about-me-page {
     width: 100%;
@@ -126,4 +172,33 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     color: #FFFFFF;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-dropdown.show {
+        display: block;
+    }
+
+    .home-page {
+        min-height: auto;
+    }
+
+    .home-page h1 {
+        font-size: 30px;
+    }
+
+    .home-page p {
+        font-size: 20px;
+    }
 }
