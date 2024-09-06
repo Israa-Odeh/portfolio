@@ -122,11 +122,60 @@ main {
     color: #588CA4;
 }
 
-
 .about-me-page {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #345162;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 40px 40px;
+    overflow-y: auto;
+}
+
+.about-me-page .greeting {
+    font-family: "Copse", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.about-me-page div {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 80ch;
+}
+
+@media screen and (max-width: 1050px) {
+    .about-me-page {
+        display: block;
+    }
+    .about-me-page img {
+        display: none;
+    }
+
+    .about-me-page .greeting {
+        font-size: 18px;
+    }
+    .about-me-page div {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-me-page .greeting {
+        font-size: 16px;
+    }
+    .about-me-page div {
+        font-size: 14px;
+        width: 100%;
+    }
 }
 
 .skills-page {
@@ -190,9 +239,10 @@ main {
         display: block;
     }
 
-    .home-page {
-        min-height: auto;
-    }
+    /* .home-page {
+        min-height: auto; 
+    } 
+    */
 
     .home-page h1 {
         font-size: 30px;
