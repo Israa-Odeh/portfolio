@@ -23,6 +23,7 @@ body {
     background-color: #345162;
     padding-right: 40px;
     border-bottom: 2px solid #DAE3E1;
+    z-index: 1000;
 }
 
 .nav-links {
@@ -151,46 +152,99 @@ main {
     width: 80ch;
 }
 
-@media screen and (max-width: 1050px) {
-    .about-me-page {
-        display: block;
-    }
-    .about-me-page img {
-        display: none;
-    }
-
-    .about-me-page .greeting {
-        font-size: 18px;
-    }
-    .about-me-page div {
-        font-size: 16px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .about-me-page .greeting {
-        font-size: 16px;
-    }
-    .about-me-page div {
-        font-size: 14px;
-        width: 100%;
-    }
-}
-
 .skills-page {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 152px;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 20px 0;
     background-image: url("../images/skills-background.png");
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
-    /* Ensures the overlay stays within the section */
+    position: relative;
 }
+
+.skills-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(198, 217, 223, 0.7);
+    z-index: 1;
+}
+
+.soft-skills, .hard-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 490px;
+    height: 550px;
+    background-color: rgba(92, 88, 164, 0.06);
+    box-shadow: 0px 0px 10px rgb(69, 111, 130);
+    padding: 20px 20px;
+    overflow-y: auto;
+    z-index: 2;
+    scrollbar-color: #5F8FA7 rgba(95, 143, 167, 0.20);
+}
+
+.soft-skills h2, .hard-skills h2 {
+    font-family: "Copse", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #588CA4;
+}
+
+.soft-skills p {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: rgba(135, 171, 188, 0.06);
+    border: 1px solid #588CA4;
+    width: 90%;
+    padding: 20px;
+    color: #588CA4;
+}
+
+.hard-skills-inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 60px;
+}
+
+.hard-skills-inner-container p {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(88, 140, 164, 0.06);
+    border-radius: 50%;
+    border: 1px solid #588CA4;
+    padding: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #588CA4;
+}
+
+
+
+
+
+
+
+
+
 
 
 .educational-background-page {
@@ -239,16 +293,94 @@ main {
         display: block;
     }
 
-    /* .home-page {
-        min-height: auto; 
-    } 
-    */
-
     .home-page h1 {
         font-size: 30px;
     }
 
     .home-page p {
         font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .home-page h1 {
+        font-size: 40px;
+    }
+
+    .home-page p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .about-me-page {
+        display: block;
+    }
+    .about-me-page img {
+        display: none;
+    }
+
+    .about-me-page .greeting {
+        font-size: 18px;
+    }
+    .about-me-page div {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-me-page .greeting {
+        font-size: 16px;
+    }
+    .about-me-page div {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .skills-page {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .soft-skills {
+        width: 90%;
+        height: auto;
+    }
+    .soft-skills p {
+        font-size: 18px;
+    }
+    .soft-skills h2, .hard-skills h2 {
+        font-size: 20px;
+    }
+    .hard-skills {
+        width: 90%;
+        height: auto;
+    }
+    .hard-skills-inner-container p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .skills-page {
+        padding: 0;
+        gap: 0;
+    }
+    .soft-skills, .hard-skills {
+        padding-top: 50px;
+        width: 100%;
+        box-shadow: none;
+    }
+    .soft-skills p {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .skills-page {
+        justify-content: center;
+        gap: 200px;
     }
 }
