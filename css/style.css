@@ -90,7 +90,9 @@ main {
 
 .home-page {
     width: 100%;
-    height: 100vh;
+    min-height: 600px;
+    height: auto;
+    max-height: 100vh;
     overflow-y: auto;
     background-image: url("../images/home-page/home-background.jpg");
     background-position: center;
@@ -246,11 +248,8 @@ main {
 .educational-background-page {
     width: 100%;
     min-height: 600px;
-    /* Minimum height to ensure content isn't too small */
     height: auto;
-    /* Allows the element to grow based on content */
     max-height: 100vh;
-    /* Maximum height relative to viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,15 +258,12 @@ main {
     background-repeat: no-repeat;
 }
 
-/* The actual timeline */
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    /* By using this the timeline is centered horizontally in the middle of the page. */
 }
 
-/* The vertical ruler */
 .timeline::after {
     content: '';
     position: absolute;
@@ -279,7 +275,6 @@ main {
     margin-left: -3px;
 }
 
-/* Container around content */
 .container {
     padding: 10px 40px;
     position: relative;
@@ -287,7 +282,6 @@ main {
     width: 50%;
 }
 
-/* The circles on the timeline */
 .container::after {
     content: '';
     position: absolute;
@@ -301,17 +295,14 @@ main {
     z-index: 1;
 }
 
-/* Place the container to the left */
 .left {
     left: 0;
 }
 
-/* Place the container to the right */
 .right {
     left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
 .left::before {
     content: " ";
     height: 0;
@@ -325,7 +316,6 @@ main {
     border-color: transparent transparent transparent #D5E3E7;
 }
 
-/* Add arrows to the right container (pointing left) */
 .right::before {
     content: " ";
     height: 0;
@@ -339,12 +329,10 @@ main {
     border-color: transparent #D5E3E7 transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
 .right::after {
     left: -16px;
 }
 
-/* The actual content */
 .content {
     padding: 20px 30px;
     border: 2px solid #D5E3E7;
@@ -372,7 +360,6 @@ main {
     background-color: #DAE3E1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* Responsive column count */
     gap: 20px;
     justify-items: center;
     align-items: start;
@@ -386,7 +373,7 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -517,7 +504,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 59, 75, 0.646);
+    background-color: rgba(0, 59, 75, 0.799);
     z-index: 1;
 }
 
@@ -570,6 +557,12 @@ main {
     }
 }
 
+@media screen and (max-height: 800px) {
+    .home-page {
+        height: 90vh;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .about-me-page {
         display: block;
@@ -591,11 +584,11 @@ main {
 
 @media screen and (max-width: 600px) {
     .about-me-page .greeting {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .about-me-page div {
-        font-size: 14px;
+        font-size: 0.875rem;
         width: 100%;
     }
 }
@@ -664,22 +657,17 @@ main {
     }
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-
-    /* Place the timelime to the left */
     .timeline::after {
         left: 31px;
     }
 
-    /* Full-width containers */
     .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
 
-    /* Make sure that all arrows are pointing leftwards */
     .container::before {
         left: 60px;
         border: medium solid #D5E3E7;
@@ -687,13 +675,11 @@ main {
         border-color: transparent #D5E3E7 transparent transparent;
     }
 
-    /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
         left: 15px;
     }
 
-    /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
     }
@@ -707,14 +693,12 @@ main {
     .content p {
         font-size: 18px;
     }
-
 }
 
 @media screen and (max-width: 350px) {
     .projects-page {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
-
 }
 
 @media (max-width: 950px) {
