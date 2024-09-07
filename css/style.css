@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -28,7 +29,7 @@ body {
     background-color: #345162;
     padding-right: 40px;
     border-bottom: 2px solid #DAE3E1;
-    z-index: 1000;
+    z-index: 3;
 }
 
 .nav-links {
@@ -62,8 +63,7 @@ body {
     width: 130px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    /*********************************************Try here************************************************/
+    z-index: 3;
 }
 
 .nav-dropdown-links {
@@ -90,12 +90,7 @@ main {
 
 .home-page {
     width: 100%;
-    min-height: 600px;
-    /* Minimum height to ensure content isn't too small */
-    height: auto;
-    /* Allows the element to grow based on content */
-    max-height: 100vh;
-    /* Maximum height relative to viewport height */
+    height: 100vh;
     overflow-y: auto;
     background-image: url("../images/home-page/home-background.jpg");
     background-position: center;

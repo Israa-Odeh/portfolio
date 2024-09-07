@@ -23,30 +23,17 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script>
-        // Waits until the entire HTML document is loaded and ready
         document.addEventListener('DOMContentLoaded', () => {
-            // Selects the button with the class 'menu-toggle'
             const menuToggle = document.querySelector('.menu-toggle');
-
-            // Selects the dropdown menu with the class 'nav-dropdown'
             const navDropdown = document.querySelector('.nav-dropdown');
 
-            // Adds a click event listener to the menu button
             menuToggle.addEventListener('click', () => {
-                // Toggles the 'show' class on the dropdown menu
                 navDropdown.classList.toggle('show');
-
-                // Checks if the 'aria-hidden' attribute is set to 'true'
                 const isHidden = navDropdown.getAttribute('aria-hidden') === 'true';
-
-                // Updates the 'aria-hidden' attribute to the opposite value
                 navDropdown.setAttribute('aria-hidden', !isHidden);
             });
         });
     </script>
-
-
-
 </head>
 
 <body>
@@ -84,7 +71,6 @@
             </div>
         </nav>
     </header>
-
 
     <main>
         <section id="home-page" class="home-page">
