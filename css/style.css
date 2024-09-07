@@ -12,7 +12,6 @@ html {
     scroll-padding-top: 80px;
 }
 
-
 body {
     min-width: 320px;
 }
@@ -397,7 +396,6 @@ main {
     border-bottom: 1px solid #D5E3E7; 
 }
 
-
 .project p {
     color: #D5E3E7;
     padding-top: 20px;
@@ -424,8 +422,6 @@ main {
     background-repeat: no-repeat;
     color: #FFFFFF;
 }
-
-
 
 /* Media Queries */
 @media screen and (max-width: 700px) {
