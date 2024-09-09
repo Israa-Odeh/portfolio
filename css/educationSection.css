@@ -29,7 +29,6 @@
 .education-section__timeline-item {
     padding: 10px 40px;
     position: relative;
-    background-color: inherit;
     width: 50%;
 }
 
@@ -55,7 +54,7 @@
 }
 
 .education-section__timeline-item--left::before {
-    content: " ";
+    content: '';
     height: 0;
     position: absolute;
     top: 22px;
@@ -68,7 +67,7 @@
 }
 
 .education-section__timeline-item--right::before {
-    content: " ";
+    content: '';
     height: 0;
     position: absolute;
     top: 22px;
