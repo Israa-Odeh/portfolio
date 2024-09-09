@@ -1,4 +1,5 @@
-@media screen and (max-width: 700px) {
+/* For mobile devices and tablets (portrait) */
+@media screen and (max-width: 768px) {
     .navbar__menu {
         display: none;
     }
@@ -23,100 +24,24 @@
     }
 
     .home-section__title {
-        font-size: 30px;
+        font-size: 1.8rem;
     }
 
     .home-section__subtitle {
-        font-size: 20px;
-    }
-}
-
-@media screen and (min-width: 700px) and (max-width: 1200px) {
-    .home-section__title {
-        font-size: 40px;
+        font-size: 1.25rem;
     }
 
-    .home-section__subtitle {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-height: 800px) {
-    .home-section {
-        height: 90vh;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-    .about-me-section {
-        display: block;
-    }
-
-    .about-me-section__image {
-        display: none;
-    }
-
-    .about-me-section_greeting {
-        font-size: 18px;
-    }
-
-    .about-me-section_content {
-        font-size: 16px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
     .about-me-section__greeting {
+        font-size: 1.125rem;
+    }
+
+    .about-me-section__paragraph {
         font-size: 1rem;
     }
-
-    .about-me-section__content {
-        font-size: 0.875rem;
-        width: 100%;
-    }
 }
 
-@media screen and (max-width: 1050px) {
-    .skills-section {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .skills-section__soft-skills {
-        width: 90%;
-        height: auto;
-    }
-
-    .skills-section__soft-skill-item {
-        font-size: 18px;
-    }
-
-    .skills-section__soft-skills-title,
-    .skills-section__hard-skills-title {
-        font-size: 20px;
-    }
-
-    .skills-section__hard-skills {
-        width: 90%;
-        height: auto;
-    }
-
-    .skills-section__hard-skill-item {
-        font-size: 18px;
-    }
-
-    /* For the projects page */
-    .projects-section__project-title {
-        font-size: 18px;
-    }
-
-    .projects-section__project-description {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 536px) {
+/* For mobile devices */
+@media screen and (max-width: 480px) {
     .skills-section {
         padding: 0;
         gap: 0;
@@ -127,20 +52,93 @@
         padding-top: 50px;
         width: 100%;
         box-shadow: none;
+        background-color: transparent;
     }
 
     .skills-section__soft-skill-item {
         width: 100%;
     }
-}
 
-@media screen and (min-width: 3000px) {
-    .skills-section {
-        justify-content: center;
-        gap: 200px;
+    .skills-section__hard-skills-list {
+        padding-bottom: 50px;
     }
 }
 
+
+/* For tablets (landscape) and small desktops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .home-section__title {
+        font-size: 2.4rem;
+    }
+
+    .home-section__subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+/* For mobile devices, tablets (portrait), tablets (landscape) and small desktops */
+@media screen and (max-width: 1024px) {
+    .about-me-section {
+        display: block;
+    }
+
+    .about-me-section__image {
+        display: none;
+    }
+
+    .about-me-section__content {
+        width: 100%;
+    }
+
+    .skills-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .skills-section__soft-skills {
+        width: 90%;
+        height: auto;
+    }
+
+    .skills-section__soft-skills-title,
+    .skills-section__hard-skills-title {
+        font-size: 1.3rem;
+    }
+
+    .skills-section__hard-skills {
+        width: 90%;
+        height: auto;
+    }
+
+    .contact-section__form-input {
+        width: 80vw;
+    }
+
+    .contact-section__image {
+        display: none;
+    }
+
+    .contact-section__form-title {
+        font-size: 1.6rem;
+    }
+
+    .contact-section__form-separator {
+        width: 76px;
+    }
+}
+
+/* For desktops */
+@media screen and (min-width: 1025px) {
+    .education-section__year {
+        font-size: 1.4rem;
+    }
+
+    .education-section__description {
+        font-size: 1.125rem;
+    }
+}
+
+/* CSS-Breakpoint based on content */
 @media screen and (max-width: 600px) {
     .education-section__timeline::after {
         left: 31px;
@@ -167,53 +165,38 @@
     .education-section__timeline-item--right {
         left: 0%;
     }
-}
 
-@media screen and (min-width: 1050px) {
-    .education-section__year {
-        font-size: 22px;
-    }
-
-    .education-section__description {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .projects-section {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-}
-
-@media (max-width: 950px) {
-    .contact-section__form-input {
-        width: 80vw;
-    }
-
-    .contact-section__image {
-        display: none;
-    }
-
-    .contact-section__form-title {
-        font-size: 25px;
-    }
-
-    .contact-section__form-separator {
-        width: 80px;
-    }
-}
-
-@media screen and (max-width: 200px) {
-    .contact-section__form-input {
-        width: 200px;
-    }
-}
-
-@media screen and (max-width: 500px) {
     .footer {
         height: 20vh;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+    }
+}
+
+/* Breakpoint based on content */
+@media screen and (max-height: 800px) {
+    .home-section {
+        height: 90vh;
+    }
+}
+
+/* For extreme cases that are unlikely but to ensure 
+   content remains responsive in all scenarios */
+@media screen and (max-width: 320px) {
+    .projects-section {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .contact-section__form-input {
+        width: 270px;
+    }
+}
+
+/* Breakpoint based on content */
+@media screen and (min-width: 3000px) {
+    .skills-section {
+        justify-content: center;
+        gap: 200px;
     }
 }
