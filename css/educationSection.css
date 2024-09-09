@@ -42,6 +42,7 @@
     border: 4px solid #D5E3E7;
     top: 15px;
     border-radius: 50%;
+    z-index: var(--layer-content);
 }
 
 .education-section__timeline-item--left {
