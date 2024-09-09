@@ -143,39 +143,39 @@
 }
 
 @media screen and (max-width: 600px) {
-    .timeline::after {
+    .education-section__timeline::after {
         left: 31px;
     }
 
-    .container {
+    .education-section__timeline-item {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
 
-    .container::before {
+    .education-section__timeline-item::before {
         left: 60px;
         border: medium solid #D5E3E7;
         border-width: 10px 10px 10px 0;
         border-color: transparent #D5E3E7 transparent transparent;
     }
 
-    .left::after,
-    .right::after {
+    .education-section__timeline-item--left::after,
+    .education-section__timeline-item--right::after {
         left: 15px;
     }
 
-    .right {
+    .education-section__timeline-item--right {
         left: 0%;
     }
 }
 
 @media screen and (min-width: 1050px) {
-    .content h2 {
+    .education-section__year {
         font-size: 22px;
     }
 
-    .content p {
+    .education-section__description {
         font-size: 18px;
     }
 }
