@@ -1,0 +1,208 @@
+@media screen and (max-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-dropdown.show {
+        display: block;
+    }
+
+    .home-page h1 {
+        font-size: 30px;
+    }
+
+    .home-page p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .home-page h1 {
+        font-size: 40px;
+    }
+
+    .home-page p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .home-page {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .about-me-page {
+        display: block;
+    }
+
+    .about-me-page img {
+        display: none;
+    }
+
+    .about-me-page .greeting {
+        font-size: 18px;
+    }
+
+    .about-me-page div {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-me-page .greeting {
+        font-size: 1rem;
+    }
+
+    .about-me-page div {
+        font-size: 0.875rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .skills-page {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .soft-skills {
+        width: 90%;
+        height: auto;
+    }
+
+    .soft-skills p {
+        font-size: 18px;
+    }
+
+    .soft-skills h2,
+    .hard-skills h2 {
+        font-size: 20px;
+    }
+
+    .hard-skills {
+        width: 90%;
+        height: auto;
+    }
+
+    .hard-skills-inner-container p {
+        font-size: 18px;
+    }
+
+    /* For the projects page */
+    .project h2 {
+        font-size: 18px;
+    }
+
+    .project p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .skills-page {
+        padding: 0;
+        gap: 0;
+    }
+
+    .soft-skills,
+    .hard-skills {
+        padding-top: 50px;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .soft-skills p {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .skills-page {
+        justify-content: center;
+        gap: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid #D5E3E7;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #D5E3E7 transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .content h2 {
+        font-size: 22px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .projects-page {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 950px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+
+    .contact-right {
+        display: none;
+    }
+
+    .contact-left-title h2 {
+        font-size: 25px;
+    }
+
+    .contact-left-title hr {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .contact-inputs {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-section {
+        height: 20vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
