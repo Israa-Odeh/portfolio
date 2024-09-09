@@ -108,11 +108,11 @@
     }
 
     /* For the projects page */
-    .project h2 {
+    .projects-section__project-title {
         font-size: 18px;
     }
 
-    .project p {
+    .projects-section__project-description {
         font-size: 16px;
     }
 }
@@ -181,7 +181,7 @@
 }
 
 @media screen and (max-width: 350px) {
-    .projects-page {
+    .projects-section {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
