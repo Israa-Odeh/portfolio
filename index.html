@@ -21,11 +21,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Copse&family=Delius&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- Navigation Styles -->
+    <link rel="stylesheet" href="css/nav.css">
+
+    <!-- Section-Specific Styles -->
+    <link rel="stylesheet" href="css/homeSection.css">
+    <link rel="stylesheet" href="css/aboutSection.css">
+    <link rel="stylesheet" href="css/skillsSection.css">
+    <link rel="stylesheet" href="css/educationSection.css">
+    <link rel="stylesheet" href="css/projectsSection.css">
+    <link rel="stylesheet" href="css/contactSection.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navDropdown = document.querySelector('.nav-dropdown');
+            const menuToggle = document.querySelector('.navbar__button');
+            const navDropdown = document.querySelector('.navbar__dropdown');
 
             menuToggle.addEventListener('click', () => {
                 navDropdown.classList.toggle('show');
@@ -39,36 +54,39 @@
 
 <body>
     <header>
-        <nav class="top-nav"
-            aria-label="The main navigation menu of the portfolio which includes links to the About Me, Skills, Education, Projects, and Contact sections, as well as the logo."
+        <nav class="navbar"
+            aria-label="The main navigation bar of the portfolio which includes links to the About Me, Skills, Education, Projects, and Contact Me sections, as well as a logo that directs to the home section."
             tabindex="0">
-            <div class="logo">
+
+            <div>
                 <a href="#"><img src="images/home-page/logo.png"
                         alt="A portfolio logo with an opening bracket '&lt;', a nature-inspired element inside, and a closing bracket '&gt;', symbolizing its frontend development association."
                         width="115" height="80"></a>
             </div>
 
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="navbar__menu">
+                <li><a href="#about" class="navbar__menu-link">About</a></li>
+                <li><a href="#skills" class="navbar__menu-link">Skills</a></li>
+                <li><a href="#education" class="navbar__menu-link">Education</a></li>
+                <li><a href="#projects" class="navbar__menu-link">Projects</a></li>
+                <li><a href="#contact" class="navbar__menu-link">Contact</a></li>
             </ul>
 
-            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <button class="navbar__button" aria-label="Toggle navbar dropdown menu" aria-expanded="false">
                 <img src="images/home-page/menu.png"
-                    alt="A menu icon to open a dropdown menu for navigating different sections of the page" width="30"
-                    height="30">
+                    alt="A menu icon to toggle a dropdown menu for navigating different sections of the portfolio"
+                    width="30" height="30">
             </button>
 
-            <div class="nav-dropdown" aria-hidden="true">
-                <ul class="nav-dropdown-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <div class="navbar__dropdown" aria-hidden="true">
+                <ul class="navbar__dropdown-menu">
+                    <li class="navbar__dropdown-item"><a href="#about" class="navbar__dropdown-link">About</a></li>
+                    <li class="navbar__dropdown-item"><a href="#skills" class="navbar__dropdown-link">Skills</a></li>
+                    <li class="navbar__dropdown-item"><a href="#education" class="navbar__dropdown-link">Education</a>
+                    </li>
+                    <li class="navbar__dropdown-item"><a href="#projects" class="navbar__dropdown-link">Projects</a>
+                    </li>
+                    <li class="navbar__dropdown-item"><a href="#contact" class="navbar__dropdown-link">Contact</a></li>
                 </ul>
             </div>
         </nav>

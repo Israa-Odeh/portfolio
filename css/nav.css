@@ -1,5 +1,6 @@
-.top-nav {
+.navbar {
     width: 100%;
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,56 +11,44 @@
     padding-right: 40px;
     border-bottom: 2px solid #DAE3E1;
     z-index: 3;
+    /****************************ZINDEX*********************/
 }
 
-.nav-links {
+.navbar__menu {
+    list-style-type: none;
     display: flex;
     gap: 30px;
-    list-style-type: none;
 }
 
-.nav-links a {
+.navbar__menu-link {
     text-decoration: none;
     font-family: "Copse", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #DAE3E1;
 }
 
-.menu-toggle {
+.navbar__button {
     display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
 }
 
-.nav-dropdown {
+.navbar__dropdown {
     display: none;
-    position: absolute;
-    top: 84px;
-    right: 0;
-    background-color: #DAE3E1;
-    width: 130px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 3;
 }
 
-.nav-dropdown-links {
+.navbar__dropdown-menu {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
-.nav-dropdown-links li:not(:first-child):not(:last-child) {
+.navbar__dropdown-item:not(:first-child):not(:last-child) {
     margin: 20px 0;
 }
 
-.nav-dropdown-links a {
+.navbar__dropdown-link {
     color: #588CA4;
     text-decoration: none;
     font-family: "Copse", serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
