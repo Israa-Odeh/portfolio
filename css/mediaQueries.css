@@ -211,7 +211,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .footer-section {
+    .footer {
         height: 20vh;
         flex-direction: column;
         justify-content: space-evenly;

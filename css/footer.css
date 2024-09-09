@@ -1,4 +1,4 @@
-.footer-section {
+.footer {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,7 @@
     padding: 0 40px;
 }
 
-.footer-section::before {
+.footer::before {
     content: "";
     position: absolute;
     top: 0;
@@ -23,18 +23,17 @@
     z-index: 1;
 }
 
-.footer-section div {
+.footer__copyright {
     z-index: 2;
 }
 
-.footer-icons {
+.footer__links {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 2;
     gap: 20px;
 }
 
-.footer-icons img {
+.footer__icon {
     width: 30px;
     height: 30px;
 }
