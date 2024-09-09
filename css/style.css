@@ -4,35 +4,6 @@ main {
     margin-top: 80px;
 }
 
-.about-me-page {
-    width: 100%;
-    height: auto;
-    background-color: #345162;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    padding: 40px 40px;
-    overflow-y: auto;
-}
-
-.about-me-page .greeting {
-    font-family: "Copse", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-
-.about-me-page div {
-    font-family: "Delius", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    color: #FFFFFF;
-    width: 80ch;
-}
-
 .skills-page {
     display: flex;
     justify-content: space-evenly;
