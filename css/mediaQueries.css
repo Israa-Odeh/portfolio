@@ -49,30 +49,30 @@
 }
 
 @media screen and (max-width: 1050px) {
-    .about-me-page {
+    .about-me-section {
         display: block;
     }
 
-    .about-me-page img {
+    .about-me-section__image {
         display: none;
     }
 
-    .about-me-page .greeting {
+    .about-me-section_greeting {
         font-size: 18px;
     }
 
-    .about-me-page div {
+    .about-me-section_content {
         font-size: 16px;
         width: 100%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .about-me-page .greeting {
+    .about-me-section__greeting {
         font-size: 1rem;
     }
 
-    .about-me-page div {
+    .about-me-section__content {
         font-size: 0.875rem;
         width: 100%;
     }

@@ -1,5 +1,4 @@
-.about-me-page {
-    width: 100%;
+.about-me-section {
     height: auto;
     background-color: #345162;
     display: flex;
@@ -7,22 +6,25 @@
     align-items: center;
     gap: 100px;
     padding: 40px 40px;
-    overflow-y: auto;
 }
 
-.about-me-page .greeting {
+.about-me-section__content {
+    width: 80ch;
+}
+
+.about-me-section__greeting {
     font-family: "Copse", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #FFFFFF;
 }
 
-.about-me-page div {
+.about-me-section__paragraph {
+    margin-top: 20px;
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #FFFFFF;
-    width: 80ch;
 }
