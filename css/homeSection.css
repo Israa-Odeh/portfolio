@@ -1,0 +1,40 @@
+.home-page {
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    max-height: 100vh;
+    overflow-y: auto;
+    background-image: url("../images/home-page/home-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+    gap: 30px;
+}
+
+.contact-icons-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    gap: 40px;
+}
+
+.home-page h1 {
+    font-family: "Copse", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+    color: #588CA4;
+}
+
+.home-page p {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #588CA4;
+}
