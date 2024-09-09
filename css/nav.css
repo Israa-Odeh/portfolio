@@ -10,8 +10,7 @@
     background-color: #345162;
     padding-right: 40px;
     border-bottom: 2px solid #DAE3E1;
-    z-index: 3;
-    /****************************ZINDEX*********************/
+    z-index: var(--layer-navbar);
 }
 
 .navbar__menu {

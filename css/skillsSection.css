@@ -18,8 +18,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(198, 217, 223, 0.7);
-    z-index: 1;
-    /***********ZZZZZZZZZZZZZZZZZZZZZZZZZ******************/
+    z-index: var(--layer-overlay);
 }
 
 .skills-section__soft-skills,
@@ -36,7 +35,7 @@
     padding: 20px 20px;
     overflow-y: auto;
     scrollbar-color: #5F8FA7 rgba(95, 143, 167, 0.20);
-    z-index: 2; /**************************************************************/
+    z-index: var(--layer-content);
 }
 
 .skills-section__soft-skills-title,

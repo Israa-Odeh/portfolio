@@ -19,16 +19,16 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 59, 75, 0.799);
-    z-index: 1;
+    z-index: var(--layer-overlay);
 }
 
-.footer__copyright {
-    z-index: 2;
+.footer__copyright,
+.footer__links {
+    z-index: var(--layer-content);
 }
 
 .footer__links {
     display: flex;
-    z-index: 2;
     gap: 20px;
 }
 

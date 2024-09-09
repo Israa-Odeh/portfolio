@@ -42,7 +42,6 @@
     border: 4px solid #D5E3E7;
     top: 15px;
     border-radius: 50%;
-    z-index: 1;
 }
 
 .education-section__timeline-item--left {
@@ -59,7 +58,6 @@
     position: absolute;
     top: 22px;
     width: 0;
-    z-index: 1;
     right: 30px;
     border: medium solid #D5E3E7;
     border-width: 10px 0 10px 10px;
@@ -72,7 +70,6 @@
     position: absolute;
     top: 22px;
     width: 0;
-    z-index: 1;
     left: 30.25px;
     border: medium solid #D5E3E7;
     border-width: 10px 10px 10px 0;
