@@ -1,5 +1,4 @@
-.contact-me-page {
-    width: 100%;
+.contact-section {
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -7,23 +6,23 @@
     padding: 20px 0;
 }
 
-.contact-left {
+.contact-section__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.contact-left-title h2 {
+.contact-section__form-title {
     font-family: "Copse", serif;
     font-weight: 600;
     font-style: normal;
     color: #588CA4;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 5px;
 }
 
-.contact-left-title hr {
+.contact-section__form-separator {
     border: none;
     width: 120px;
     height: 2px;
@@ -32,7 +31,7 @@
     margin-bottom: 20px;
 }
 
-.contact-inputs {
+.contact-section__form-input {
     width: 400px;
     height: 50px;
     border: 1px solid #588CA4;
@@ -41,26 +40,26 @@
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
     color: #666;
     border-radius: 50px;
 }
 
-.contact-left textarea {
+.contact-section__form-textarea {
     height: 140px;
     padding: 15px 25px;
     border-radius: 20px;
 }
 
-.contact-inputs:focus {
+.contact-section__form-input:focus {
     border: 2px solid #588CA4;
 }
 
-.contact-inputs::placeholder {
+.contact-section__form-input::placeholder {
     color: #a9a9a9;
 }
 
-.contact-left button {
+.contact-section__form-button {
     display: flex;
     align-items: center;
     padding: 15px 30px;
@@ -72,7 +71,7 @@
     cursor: pointer;
 }
 
-.contact-left button img {
+.contact-section__form-button-icon {
     height: 15px;
     width: 15px;
 }

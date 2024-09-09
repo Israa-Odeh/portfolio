@@ -252,25 +252,27 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-me-page" aria-label="Contact section with a form for users to get in touch"
+        <section id="contact" class="contact-section" aria-label="Contact section with a form for users to get in touch"
             tabindex="0">
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-                <div class="contact-left-title">
-                    <h2>Get In Touch</h2>
-                    <hr>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-section__form">
+                <div>
+                    <h2 class="contact-section__form-title">Get In Touch</h2>
+                    <hr class="contact-section__form-separator">
                 </div>
                 <input type="hidden" name="access_key" value="e3c23478-56f7-40ba-beb6-e151f0f93564">
-                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" aria-label="Your Name"
-                    required>
-                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" aria-label="Your Email"
-                    required>
-                <textarea name="message" placeholder="Your Message" class="contact-inputs" aria-label="Your Message"
+                <input type="text" name="name" placeholder="Your Name" class="contact-section__form-input"
+                    aria-label="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-section__form-input"
+                    aria-label="Your Email" required>
+                <textarea name="message" placeholder="Your Message"
+                    class="contact-section__form-input contact-section__form-textarea" aria-label="Your Message"
                     required></textarea>
-                <button type="submit">Submit <img src="images/contact-page/arrow_icon.png"
+                <button class="contact-section__form-button" type="submit">Submit <img
+                        class="contact-section__form-button-icon" src="images/contact-page/arrow_icon.png"
                         alt="Submit button arrow icon" width="24" height="24"></button>
             </form>
 
-            <div class="contact-right">
+            <div class="contact-section__image">
                 <img src="images/contact-page/get-in-touch.gif"
                     alt="Girl sitting with a laptop filling out a get-in-touch form" width="500" height="500">
             </div>
