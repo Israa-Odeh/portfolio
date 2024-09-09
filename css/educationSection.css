@@ -1,8 +1,6 @@
 .education-section {
     min-height: 600px;
     height: auto;
-    max-height: 100vh;
-    overflow-y: auto;
     display: flex;
     justify-content: center;
     align-items: center;
