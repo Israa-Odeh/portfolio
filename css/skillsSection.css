@@ -1,17 +1,16 @@
-.skills-page {
+.skills-section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
     height: auto;
-    padding: 20px 0;
+    padding: 50px 0;
     background-image: url("../images/skills-page/skills-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
-.skills-page::before {
+.skills-section::before {
     content: "";
     position: absolute;
     top: 0;
@@ -20,39 +19,40 @@
     height: 100%;
     background-color: rgba(198, 217, 223, 0.7);
     z-index: 1;
+    /***********ZZZZZZZZZZZZZZZZZZZZZZZZZ******************/
 }
 
-.soft-skills,
-.hard-skills {
+.skills-section__soft-skills,
+.skills-section__hard-skills {
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: flex-start;
     align-items: center;
     width: 490px;
-    height: 550px;
+    height: 560px;
     background-color: rgba(92, 88, 164, 0.06);
     box-shadow: 0px 0px 10px rgb(69, 111, 130);
     padding: 20px 20px;
     overflow-y: auto;
-    z-index: 2;
     scrollbar-color: #5F8FA7 rgba(95, 143, 167, 0.20);
+    z-index: 2; /**************************************************************/
 }
 
-.soft-skills h2,
-.hard-skills h2 {
+.skills-section__soft-skills-title,
+.skills-section__hard-skills-title {
     font-family: "Copse", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #588CA4;
 }
 
-.soft-skills p {
+.skills-section__soft-skill-item {
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1rem;
     background-color: rgba(135, 171, 188, 0.06);
     border: 1px solid #588CA4;
     width: 90%;
@@ -60,25 +60,25 @@
     color: #588CA4;
 }
 
-.hard-skills-inner-container {
+.skills-section__hard-skills-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px 60px;
+    gap: 30px 60px;
 }
 
-.hard-skills-inner-container p {
+.skills-section__hard-skill-item {
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 22px;
-    height: 60px;
-    width: 60px;
+    font-size: 1.1rem;
+    height: 50px;
+    width: 50px;
     background-color: rgba(88, 140, 164, 0.06);
     border-radius: 50%;
     border: 1px solid #588CA4;
-    padding: 48px;
+    padding: 45px;
     display: flex;
     justify-content: center;
     align-items: center;

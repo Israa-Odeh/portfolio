@@ -79,31 +79,31 @@
 }
 
 @media screen and (max-width: 1050px) {
-    .skills-page {
+    .skills-section {
         flex-direction: column;
         gap: 20px;
     }
 
-    .soft-skills {
+    .skills-section__soft-skills {
         width: 90%;
         height: auto;
     }
 
-    .soft-skills p {
+    .skills-section__soft-skill-item {
         font-size: 18px;
     }
 
-    .soft-skills h2,
-    .hard-skills h2 {
+    .skills-section__soft-skills-title,
+    .skills-section__hard-skills-title {
         font-size: 20px;
     }
 
-    .hard-skills {
+    .skills-section__hard-skills {
         width: 90%;
         height: auto;
     }
 
-    .hard-skills-inner-container p {
+    .skills-section__hard-skill-item {
         font-size: 18px;
     }
 
@@ -118,25 +118,25 @@
 }
 
 @media screen and (max-width: 536px) {
-    .skills-page {
+    .skills-section {
         padding: 0;
         gap: 0;
     }
 
-    .soft-skills,
-    .hard-skills {
+    .skills-section__soft-skills,
+    .skills-section__hard-skills {
         padding-top: 50px;
         width: 100%;
         box-shadow: none;
     }
 
-    .soft-skills p {
+    .skills-section__soft-skill-item {
         width: 100%;
     }
 }
 
 @media screen and (min-width: 3000px) {
-    .skills-page {
+    .skills-section {
         justify-content: center;
         gap: 200px;
     }
