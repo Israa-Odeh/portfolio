@@ -83,3 +83,35 @@
     align-items: center;
     color: #588CA4;
 }
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+    .skills-section {
+        padding: 0;
+        gap: 0;
+    }
+
+    .skills-section__soft-skills,
+    .skills-section__hard-skills {
+        padding-top: 50px;
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .skills-section__soft-skill-item {
+        width: 100%;
+    }
+
+    .skills-section__hard-skills-list {
+        padding-bottom: 50px;
+    }
+}
+
+/* Breakpoint based on content */
+@media screen and (min-width: 3000px) {
+    .skills-section {
+        justify-content: center;
+        gap: 200px;
+    }
+}

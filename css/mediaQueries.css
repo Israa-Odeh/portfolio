@@ -40,42 +40,6 @@
     }
 }
 
-/* For mobile devices */
-@media screen and (max-width: 480px) {
-    .skills-section {
-        padding: 0;
-        gap: 0;
-    }
-
-    .skills-section__soft-skills,
-    .skills-section__hard-skills {
-        padding-top: 50px;
-        width: 100%;
-        box-shadow: none;
-        background-color: transparent;
-    }
-
-    .skills-section__soft-skill-item {
-        width: 100%;
-    }
-
-    .skills-section__hard-skills-list {
-        padding-bottom: 50px;
-    }
-}
-
-
-/* For tablets (landscape) and small desktops */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .home-section__title {
-        font-size: 2.4rem;
-    }
-
-    .home-section__subtitle {
-        font-size: 1.3rem;
-    }
-}
-
 /* For mobile devices, tablets (portrait), tablets (landscape) and small desktops */
 @media screen and (max-width: 1024px) {
     .about-me-section {
@@ -127,17 +91,6 @@
     }
 }
 
-/* For desktops */
-@media screen and (min-width: 1025px) {
-    .education-section__year {
-        font-size: 1.4rem;
-    }
-
-    .education-section__description {
-        font-size: 1.125rem;
-    }
-}
-
 /* CSS-Breakpoint based on content */
 @media screen and (max-width: 600px) {
     .education-section__timeline::after {
@@ -174,13 +127,6 @@
     }
 }
 
-/* Breakpoint based on content */
-@media screen and (max-height: 800px) {
-    .home-section {
-        height: 90vh;
-    }
-}
-
 /* For extreme cases that are unlikely but to ensure 
    content remains responsive in all scenarios */
 @media screen and (max-width: 320px) {
@@ -190,13 +136,5 @@
 
     .contact-section__form-input {
         width: 270px;
-    }
-}
-
-/* Breakpoint based on content */
-@media screen and (min-width: 3000px) {
-    .skills-section {
-        justify-content: center;
-        gap: 200px;
     }
 }
