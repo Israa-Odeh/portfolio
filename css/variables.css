@@ -1,0 +1,6 @@
+:root {
+    --layer-overlay: 10;
+    --layer-content: 20;
+    --layer-navbar: 30;
+    --layer-dropdown: 40;
+}

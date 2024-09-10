@@ -1,0 +1,140 @@
+/* For mobile devices and tablets (portrait) */
+@media screen and (max-width: 768px) {
+    .navbar__menu {
+        display: none;
+    }
+
+    .navbar__button {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navbar__dropdown.show {
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #DAE3E1;
+        width: 130px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: var(--layer-dropdown);
+    }
+
+    .home-section__title {
+        font-size: 1.8rem;
+    }
+
+    .home-section__subtitle {
+        font-size: 1.25rem;
+    }
+
+    .about-me-section__greeting {
+        font-size: 1.125rem;
+    }
+
+    .about-me-section__paragraph {
+        font-size: 1rem;
+    }
+}
+
+/* For mobile devices, tablets (portrait), tablets (landscape) and small desktops */
+@media screen and (max-width: 1024px) {
+    .about-me-section {
+        display: block;
+    }
+
+    .about-me-section__image {
+        display: none;
+    }
+
+    .about-me-section__content {
+        width: 100%;
+    }
+
+    .skills-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .skills-section__soft-skills {
+        width: 90%;
+        height: auto;
+    }
+
+    .skills-section__soft-skills-title,
+    .skills-section__hard-skills-title {
+        font-size: 1.3rem;
+    }
+
+    .skills-section__hard-skills {
+        width: 90%;
+        height: auto;
+    }
+
+    .contact-section__form-input {
+        width: 80vw;
+    }
+
+    .contact-section__image {
+        display: none;
+    }
+
+    .contact-section__form-title {
+        font-size: 1.6rem;
+    }
+
+    .contact-section__form-separator {
+        width: 76px;
+    }
+}
+
+/* CSS-Breakpoint based on content */
+@media screen and (max-width: 600px) {
+    .education-section__timeline::after {
+        left: 31px;
+    }
+
+    .education-section__timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .education-section__timeline-item::before {
+        left: 60px;
+        border: medium solid #D5E3E7;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #D5E3E7 transparent transparent;
+    }
+
+    .education-section__timeline-item--left::after,
+    .education-section__timeline-item--right::after {
+        left: 15px;
+    }
+
+    .education-section__timeline-item--right {
+        left: 0%;
+    }
+
+    .footer {
+        height: 20vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+/* For extreme cases that are unlikely but to ensure 
+   content remains responsive in all scenarios */
+@media screen and (max-width: 320px) {
+    .projects-section {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .contact-section__form-input {
+        width: 270px;
+    }
+}
