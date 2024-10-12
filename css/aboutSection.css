@@ -1,0 +1,32 @@
+.about-me-section {
+    width: 100%;
+    height: auto;
+    background-color: #345162;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 40px 40px;
+    overflow-y: auto;
+}
+
+.about-me-section__content {
+    width: 80ch;
+}
+
+.about-me-section__greeting {
+    font-family: "Copse", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+
+.about-me-section__paragraph {
+    margin-top: 20px;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.125rem;
+    color: #FFFFFF;
+}

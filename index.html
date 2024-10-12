@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Israa Odeh">
+    <meta name="description"
+        content="Welcome to my personal portfolio website! Here, you'll find a comprehensive overview of my education, skills, and professional experience. Explore the various sections to learn more about my background and get in touch.">
+    <title>Israa Odeh | Frontend Developer</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+
+    <!--Google Fonts-->
+    <!--Copse Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+
+    <!--Delius Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Copse&family=Delius&display=swap" rel="stylesheet">
+
+    <!-- Variables -->
+    <link rel="stylesheet" href="css/variables.css">
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- Navigation Styles -->
+    <link rel="stylesheet" href="css/nav.css">
+
+    <!-- Section-Specific Styles -->
+    <link rel="stylesheet" href="css/homeSection.css">
+    <link rel="stylesheet" href="css/aboutSection.css">
+    <link rel="stylesheet" href="css/skillsSection.css">
+    <link rel="stylesheet" href="css/educationSection.css">
+    <link rel="stylesheet" href="css/projectsSection.css">
+    <link rel="stylesheet" href="css/contactSection.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.navbar__button');
+            const navDropdown = document.querySelector('.navbar__dropdown');
+
+            menuToggle.addEventListener('click', () => {
+                navDropdown.classList.toggle('show');
+                const isHidden = navDropdown.getAttribute('aria-hidden') === 'true';
+                navDropdown.setAttribute('aria-hidden', !isHidden);
+                menuToggle.setAttribute('aria-expanded', isHidden);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar"
+            aria-label="The main navigation bar of the portfolio which includes links to the About Me, Skills, Education, Projects, and Contact Me sections, as well as a logo that directs to the home section."
+            tabindex="0">
+
+            <div>
+                <a href="#home"><img src="images/home-page/logo.png"
+                        alt="A portfolio logo with an opening bracket '&lt;', a nature-inspired element inside, and a closing bracket '&gt;', symbolizing its frontend development association."
+                        width="115" height="80"></a>
+            </div>
+
+            <ul class="navbar__menu">
+                <li><a href="#about" class="navbar__menu-link">About</a></li>
+                <li><a href="#skills" class="navbar__menu-link">Skills</a></li>
+                <li><a href="#education" class="navbar__menu-link">Education</a></li>
+                <li><a href="#projects" class="navbar__menu-link">Projects</a></li>
+                <li><a href="#contact" class="navbar__menu-link">Contact</a></li>
+            </ul>
+
+            <button class="navbar__button" aria-label="Toggle navbar dropdown menu" aria-expanded="false">
+                <img src="images/home-page/menu.png"
+                    alt="A menu icon to toggle a dropdown menu for navigating different sections of the portfolio"
+                    width="30" height="30">
+            </button>
+
+            <div class="navbar__dropdown" aria-hidden="true">
+                <ul class="navbar__dropdown-menu">
+                    <li class="navbar__dropdown-item"><a href="#about" class="navbar__dropdown-link">About</a></li>
+                    <li class="navbar__dropdown-item"><a href="#skills" class="navbar__dropdown-link">Skills</a></li>
+                    <li class="navbar__dropdown-item"><a href="#education" class="navbar__dropdown-link">Education</a>
+                    </li>
+                    <li class="navbar__dropdown-item"><a href="#projects" class="navbar__dropdown-link">Projects</a>
+                    </li>
+                    <li class="navbar__dropdown-item"><a href="#contact" class="navbar__dropdown-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home-section"
+            aria-label="Introduction section with personal greeting and links to email, LinkedIn, and GitHub profiles"
+            tabindex="0">
+            <h1 class="home-section__title">Hi, I'm Israa Odeh</h1>
+            <p class="home-section__subtitle">Front-end Developer</p>
+            <div class="home-section__contact-links">
+                <a href="mailto:israa.k.odeh@gmail.com" target="_blank"><img src="images/home-page/email-icon.png"
+                        alt="Send an email to Israa Odeh" width="40" height="40"></a>
+
+                <a href="https://www.linkedin.com/in/israa-odeh/" target="_blank"><img
+                        src="images/home-page/linkedin-icon.png" alt="LinkedIn profile of Israa Odeh" width="40"
+                        height="40"></a>
+
+                <a href="https://github.com/Israa-Odeh" target="_blank"><img src="images/home-page/github-icon.png"
+                        alt="GitHub profile of Israa Odeh" width="40" height="40"></a>
+            </div>
+        </section>
+
+        <section id="about" class="about-me-section"
+            aria-label="About me section providing information about Israa Odeh's background and interests"
+            tabindex="0">
+            <div class="about-me-section__content">
+                <span class="about-me-section__greeting"> As-salamu alaykum, </span>
+
+                <p class="about-me-section__paragraph">My name is Israa Odeh, and I recently graduated with a degree in
+                    Computer Engineering from An-Najah National University in Nablus. I am passionate about front-end
+                    development, a field I explored through various university projects, immersing myself in design
+                    principles and coding practices. My enthusiasm for this area drives me to craft engaging and
+                    functional websites and applications.</p>
+
+                <p class="about-me-section__paragraph">I am dedicated to continuous personal and professional growth,
+                    always seeking ways to enhance user experiences through clean and scalable code. I am eager to join
+                    a team where I can contribute my skills, learn from experienced professionals, and work on
+                    innovative projects. My goal is to make a meaningful impact and grow within a forward-thinking
+                    company.</p>
+
+                <p class="about-me-section__paragraph">Outside of technology, I enjoy reading diverse books, planting
+                    and nurturing vegetables and fruits, listening to informative podcasts, and taking relaxing
+                    late-night walks.</p>
+            </div>
+            <img class="about-me-section__image" src="images/about-page/hello-cartoon.png"
+                alt="Cartoon character of a girl waving from a balcony and saying 'Hello'" width="567" height="464">
+        </section>
+
+        <section id="skills" class="skills-section" aria-label="Skills section detailing both soft and hard skills"
+            tabindex="0">
+            <div class="skills-section__soft-skills">
+                <h2 class="skills-section__soft-skills-title">Soft Skills</h2>
+                <p class="skills-section__soft-skill-item">Effective communicator with teams and clients.</p>
+                <p class="skills-section__soft-skill-item">Working collaboratively in a team and achieving common goals.
+                </p>
+                <p class="skills-section__soft-skill-item">Identifying problems, analyzing options, and finding
+                    effective solutions.</p>
+                <p class="skills-section__soft-skill-item">Ability to prioritize tasks, manage time efficiently, and
+                    meet deadlines.</p>
+                <p class="skills-section__soft-skill-item">The capacity to effectively learn and work while under
+                    pressure.
+                </p>
+            </div>
+
+            <div class="skills-section__hard-skills">
+                <h2 class="skills-section__hard-skills-title">Hard Skills</h2>
+                <div class="skills-section__hard-skills-list">
+                    <p class="skills-section__hard-skill-item">C/C++</p>
+                    <p class="skills-section__hard-skill-item">Java</p>
+                    <p class="skills-section__hard-skill-item">Python</p>
+                    <p class="skills-section__hard-skill-item">Dart</p>
+                    <p class="skills-section__hard-skill-item">Scala</p>
+                    <p class="skills-section__hard-skill-item">SQL</p>
+                    <p class="skills-section__hard-skill-item">HTML</p>
+                    <p class="skills-section__hard-skill-item">CSS</p>
+                    <p class="skills-section__hard-skill-item">Oracle</p>
+                    <p class="skills-section__hard-skill-item">Git</p>
+                    <p class="skills-section__hard-skill-item">GitHub</p>
+                    <p class="skills-section__hard-skill-item">Figma</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education-section"
+            aria-label="Educational background section highlighting academic achievements and certifications"
+            tabindex="0">
+            <div class="education-section__timeline">
+                <div class="education-section__timeline-item education-section__timeline-item--left">
+                    <div class="education-section__content">
+                        <h2 class="education-section__year">2019-2024</h2>
+                        <p class="education-section__description">Bachelor's Degree in Computer Engineering, An-Najah
+                            National University Nablus, Palestine, GPA: 3.4.</p>
+                    </div>
+                </div>
+
+                <div class="education-section__timeline-item education-section__timeline-item--right">
+                    <div class="education-section__content">
+                        <h2 class="education-section__year">2015-2017</h2>
+                        <p class="education-section__description">English Access Microscholarship Program, AMIDEAST: An
+                            intensive, two-year program focused on improving English language skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section"
+            aria-label="Projects section showcasing various personal and academic projects" tabindex="0">
+            <div class="projects-section__project">
+                <h2 class="projects-section__project-title">Road To Recovery</h2>
+                <p class="projects-section__project-description">A web app that offers a virtual hub for addiction
+                    recovery, allowing users to book appointments with psychologists. Technologies used include HTML,
+                    CSS, JavaScript, PHP, and SQL.</p>
+            </div>
+
+            <div class="projects-section__project">
+                <a href="https://github.com/Israa-Odeh/Smooth-Wheel" target="_blank">
+                    <img class="projects-section__project-icon" src="images/projects-page/arrow-top-right-large.png"
+                        alt="Arrow-top-right icon that links to Smooth Wheel GitHub codebase" width="28" height="28">
+                </a>
+                <h2 class="projects-section__project-title">Smooth Wheel</h2>
+                <p class="projects-section__project-description"> A desktop app designed for car rental company
+                    administrators. It utilizes virtual interfaces to streamline the rental process. The technologies
+                    involved are Java and SQL.</p>
+            </div>
+
+            <div class="projects-section__project">
+                <h2 class="projects-section__project-title">Happy Grades</h2>
+                <p class="projects-section__project-description">A desktop app which serves as a grading system for
+                    An-Najah National University, integrating students, profs, and teacher assistants in one platform.
+                    The project employs Java and SQL technologies.</p>
+            </div>
+
+            <div class="projects-section__project">
+                <a href="https://github.com/Israa-Odeh/Mersakom-Inventory-System-Frontend" target="_blank">
+                    <img class="projects-section__project-icon" src="images/projects-page/arrow-top-right-large.png"
+                        alt="Arrow-top-right icon that links to Mersakom GitHub codebase" width="28" height="28">
+                </a>
+                <h2 class="projects-section__project-title">Mersakom</h2>
+                <p class="projects-section__project-description">This project used a Java web client, PHP server, and
+                    Java Servlet to create a basic inventory database system, employing Java, PHP, Servlets, SQL, HTTP,
+                    and a live currency API.</p>
+            </div>
+
+            <div class="projects-section__project">
+                <a href="https://github.com/Israa-Odeh/Touristine" target="_blank">
+                    <img class="projects-section__project-icon" src="images/projects-page/arrow-top-right-large.png"
+                        alt="Arrow-top-right icon that links to Touristine GitHub codebase" width="28" height="28">
+                </a>
+                <h2 class="projects-section__project-title">Touristine</h2>
+                <p class="projects-section__project-description">This project is a travel app for Palestine, using
+                    Flutter for the front-end, Node.js and Express for the backend, MongoDB for database, Firebase for
+                    storage, Python for machine learning, and Render for hosting.</p>
+            </div>
+
+            <div class="projects-section__project">
+                <h2 class="projects-section__project-title">Practical Training</h2>
+                <p class="projects-section__project-description">This training at ProGineer Technologies focused on data
+                    engineering, covering Scala programming, Cassandra for database management, and Spark for data
+                    processing.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-label="Contact section with a form for users to get in touch"
+            tabindex="0">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-section__form">
+                <div>
+                    <h2 class="contact-section__form-title">Get In Touch</h2>
+                    <hr class="contact-section__form-separator">
+                </div>
+                <input type="hidden" name="access_key" value="e3c23478-56f7-40ba-beb6-e151f0f93564">
+                <input type="text" name="name" placeholder="Your Name" class="contact-section__form-input"
+                    aria-label="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-section__form-input"
+                    aria-label="Your Email" required>
+                <textarea name="message" placeholder="Your Message"
+                    class="contact-section__form-input contact-section__form-textarea" aria-label="Your Message"
+                    required></textarea>
+                <button class="contact-section__form-button" type="submit">Submit <img
+                        class="contact-section__form-button-icon" src="images/contact-page/arrow_icon.png"
+                        alt="Submit button arrow icon" width="24" height="24"></button>
+            </form>
+
+            <div class="contact-section__image">
+                <img src="images/contact-page/get-in-touch.gif"
+                    alt="Girl sitting with a laptop filling out a get-in-touch form" width="500" height="500">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer" aria-label="Footer with copyright notice, email contact, LinkedIn, and GitHub links"
+            tabindex="0">
+            <div class="footer__copyright">
+                <p>&copy; Copyright 2024. Israa Odeh</p>
+            </div>
+            <div class="footer__links">
+                <a href="mailto:israa.k.odeh@gmail.com" target="_blank"><img class="footer__icon"
+                        src="images/footer/email-icon.png" alt="Send an email to Israa Odeh" width="40" height="40"></a>
+
+                <a href="https://www.linkedin.com/in/israa-odeh/" target="_blank"><img class="footer__icon"
+                        src="images/footer/linkedin-icon.png" alt="LinkedIn profile of Israa Odeh" width="40"
+                        height="40"></a>
+
+                <a href="https://github.com/Israa-Odeh" target="_blank"><img class="footer__icon"
+                        src="images/footer/github-icon.png" alt="GitHub profile of Israa Odeh" width="40"
+                        height="40"></a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

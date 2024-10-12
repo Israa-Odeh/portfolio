@@ -1,0 +1,38 @@
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    background-image: url("../images/footer/footer-background.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    padding: 0 40px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 59, 75, 0.799);
+    z-index: var(--layer-overlay);
+}
+
+.footer__copyright,
+.footer__links {
+    z-index: var(--layer-content);
+}
+
+.footer__links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__icon {
+    width: 30px;
+    height: 30px;
+}
